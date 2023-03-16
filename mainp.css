@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.nav-container {
+   display: block;
+   align-items: center;
+   list-style-type: none;
+}
+
+.top-nav {
+    display: flex;
+    direction: inherit;
+    flex-direction: right;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+}
+
+ul {
+    display: flex;
+    padding: 10px;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+
+
+.item-content {
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+@media  {
+    max-width: 500px;
+ }
+
+h1 {
+    display: flex;
+    flex-direction: inherit;
+    font-size: 650%;
+    font-style: oblique;
+    color: aqua;
+ }
+
+ .therapist-info {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .header-about-us {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 40;
+    padding: 40;
+ }
+
+ .DN {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    padding: 20px;
+ }
+
+ .DTM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    padding-bottom: 20px;
+ }
+ .IASTM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    padding: 20px;
+ }
+ .Cupping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    padding: 20px;
+ }
+
+ .treatment-p {
+    display: flex;
+    font-style: normal;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+ }
+ 
+ .treatment-offered {
+    display: flex;
+    flex-direction: inherit;
+    font-size: 450%;
+    font-style: oblique;
+    color: aqua;
+ }
+
+ .container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+
+ .logo {
+    display: flex;
+    align-items: center;
+    max-height: 10cm;
+ }
+ 
+
