@@ -14,7 +14,7 @@
       <button onclick="window.location.href = 'index.php';">HOMEPAGE</button>
       </head>
       <section>
-  <form class="container-form">
+  <form id=contactform class="contact-form" action="./app.js" method="GET">
 <div>
 <label for="fname">Forename</label>
     <input type="text" id="fname" name="fname" placeholder="First name..">
@@ -49,6 +49,9 @@
 
   </form>
 </div>
+<section>
+  <p id='conctact-error'></p>
+</section>
 <div>
 <section class="container-contact-info">
         <p >
@@ -85,3 +88,5 @@ if (isset ($_POST['q']) )
     $statement->execute();
 }
 ?>
+
+<script src="../Jquery/app.js"></script>

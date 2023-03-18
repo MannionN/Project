@@ -35,7 +35,10 @@ ul {
     padding-bottom: 10px;
 }
 
-
+.container-homepage-link {
+   display: flex;
+   flex-direction: row;
+}
 
 .item-content {
     padding-left: 10px;
@@ -47,9 +50,10 @@ ul {
     flex-direction: column;
 }
 
-@media  {
-    max-width: 500px;
- }
+@media only screen and (max-width: 600px) {
+   body {
+     background-color: lightblue;
+   }
 
 h1 {
     display: flex;
@@ -134,5 +138,3 @@ h1 {
     align-items: center;
     max-height: 10cm;
  }
- 
-

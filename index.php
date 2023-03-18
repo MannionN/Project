@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<body>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,9 @@
     </title>
 </head>
 <h1 class-body>
-    
 </h1>
 
-<body>
+
 <?php
 if (isset ($_GET['q']) )
 {
@@ -53,7 +53,7 @@ if (isset ($_GET['q']) )
     
 ?>
 <header class="container_heading">
-    <img src="reviviemuscletherapylogo.jpg" alt="">
+    <img src="reviviemuscletherapylogo.jpg" alt="" style="max-width:100%">
 </header>
 <section>
 <form class="topnav" action = "./index.php", method = "GET">

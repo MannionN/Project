@@ -1,18 +1,17 @@
-// let message = 70;
-// let message2 = 100;
+window.addEventListener("load", (e) => {
+  const ContactForm = document.getElementById("contactForm");
+  const ContactFormError = document.getElementById ("contact-error")
 
-//console.log (message + message2)
+  ContactForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    let formData = new FormData (this);
+    let namevalue = FormData.get('name');
+    let surnamevalue = FormData.get('surname');
+    let contactNumberValue = formData.get('contact_number');
+    let emailAddressValue = formData.get('email_address');
+    let messageValue = formData.get('message');
+    let marketingValue = formData.get('marketing');
 
-//let car = {type: 'ford', miles: '12000', fuelType: 'diesel'
+  })
 }
-//console.log (car)
-
-let formData = new FormData();
-formData.append('1name', 'value1');
-formData.append('email-address', 'value2');
-formData.append('subject', 'value3')
-
-// List key/value pairs
-for(let [name, value] of formData) {
-  alert(`${name} = ${value}`); // 1name = value1, then email-address = value2, subject = value3
-}
+)
