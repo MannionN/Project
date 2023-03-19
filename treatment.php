@@ -11,7 +11,7 @@
         </head>
         <Section>
             <H1 class="header.rx">
-                <p>What services do we offer?</p>
+                What services do we offer?
             </H1>
         
             <H3 class="container-therapist-info">   
@@ -27,8 +27,7 @@
             </H3>
             
             <H2>
-            <H2>
-                 <p class="container-treatment-offered">What treatments do we offer?</p>
+                What treatments do we offer?
             </H2>
 
                 </div>

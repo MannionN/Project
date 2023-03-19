@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainp.css">
 
-<body>
+<body class="background">
   
       <title>
 
@@ -14,7 +14,7 @@
       <button onclick="window.location.href = 'index.php';">HOMEPAGE</button>
       </head>
       <section>
-  <form id=contactform class="contact-form" action="./app.js" method="GET">
+  <form id=contactform class="contact-form" action="./contactus.php" method="POST">
 <div>
 <label for="fname">Forename</label>
     <input type="text" id="fname" name="fname" placeholder="First name..">
@@ -29,28 +29,29 @@
 
 <div>
     <label for="contact_number">Contact Number</label>
-    <input type="text" id="Contact-Number" name="Contact-Number" placeholder="Contact Number">
+    <input type="text" id="contact_number" name="contact_number" placeholder="Contact Number">
 </div>
 
 <div>
       <label for="email_address">Email address</label>
-      <input type="text" id="email" placeholder="email address">
+      <input type="text" id="email" name="email_address" placeholder="email address">
 </div>
 
-<div>message</label>
-    <textarea id="message" name="message" placeholder="How can we help?" style="height:200px"></textarea>
+<div>Message</label>
+    <textarea id="message" name="message" placeholder="How can we help?" style="height:150px">How can we help?</textarea>
 </div>
     
 <div>
-    <label for="marketing"><input type="checkbox" name="marketing" value="red" id="c1">Would you like to opt in for markerting and offers?</label>
+    <label for="marketing"><input type="checkbox" name="marketing" id="c1">Would you like to opt in for markerting and offers?</label>
 </div>
 
     <input type="submit" value="Submit">
 
   </form>
 </div>
+</section>
 <section>
-  <p id='conctact-error'></p>
+  <p id='contact-error'></p>
 </section>
 <div>
 <section class="container-contact-info">
@@ -73,20 +74,6 @@
     </body>
 </html>
 
-<?php
-if (isset ($_POST['q']) )
-{
-    $databasePassword = 'rSy33)Duvw49nqYg';
-    $databaseUser = 'phpuser';
-    $databaseHost = 'localhost';
-    $database = 'therapy';
-    
 
-    $connection = new mysqli($databaseHost, $databaseUser, $databasePassword, $database);
-    $statement = $connection->prepare ('INSERT INTO user (`name`, `surname`, `contact_number`, `email`, `message`, `marketing`) values (?,?,?,?,?)');
-    $statement->bind_param('sssss', $_POST ['fname'], $_POST ['1name'], $_POST ['contact_number'], $_POST ['email_address'], $_POST ['message'], $_POST ['marketing'] );
-    $statement->execute();
-}
-?>
 
-<script src="../Jquery/app.js"></script>
+<script src="/xampp/Project/JS/app.js"></script>
